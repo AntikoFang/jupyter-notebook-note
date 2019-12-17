@@ -1,0 +1,12 @@
+#3.1 重量计算
+# 月球上物体的体重是在地球上是16.5%，假如你在地球上每年增长0.5KG，
+# 编写程序输出未来10年你在地球和月球上的体重状况
+def WEIGHT():
+WEI = INT(INPUT('PLEASE INPUT YOUR WEIGHT(KG):'))
+I = 0
+for I in RANGE (0,10):
+WEI += 0.5
+MOONWEI = WEI * (1 + 0.165)
+I += 1
+PRINT("地球：{:.2F}KG".FORMAT(WEI),"月球：{:.2F}KG".FORMAT(MOONWEI))
+WEIGHT()
